@@ -1,4 +1,4 @@
-![Getting Started](./dashboard.jpeg)
+![Getting Started](Utils\Dashboard.jpeg)
 <a name="readme-top"></a>
 
 <div align="center">
@@ -67,7 +67,7 @@ The Telco Churn Classification Project was done following the CRISP-DM process. 
 
 <details>
   <summary>Data Sources</summary>
-  <p>The data for this project was sourced from different places. The 2018 and 2019 datasets were collected from GitHub via provided links, and the 2020 and 2021 datasets from a remotely secured database using credentials provided by client.</p>
+  <p>For this project, I search through a dataset that is scattered among three different sources and use each to mine for insightful information. The first part, which includes the first 3000 records, is stored in a remote database. I use the pyodc package to retrieve this information from a distance. The second 2000 data is named “Telco-churn-second-2000.xlsx” and is available in OneDrive. This file represents our test dataset, which is a crucial component in assessing the quality of our work. And lastly, “LP2_Telco-churn-last-2000.csv” is the last component, which is stored in the GitHub repository. The first and last datasets were concatenated into for one big dataset, train_df for model training and evaluation.</p>
 </details>
 
 <details>
@@ -89,35 +89,26 @@ The Telco Churn Classification Project was done following the CRISP-DM process. 
 <!-- Features -->
 
 ## Success Criteria <a name="key-features"></a>
-- To find the correlation and the p-value between the funding amount and the various features of the startups, such as industry sector, location, age, stage, etc. This will help give the stakeholders (team) about the strength and significance of the relationship between the funding amount and the potential factors
-
-- To build an interactive dashboard with Power BI to visualize the fundings received by Indian start-ups based on the seleced features of the start-ups. The findings from the analysis will be used by the stakeholders (team) to make informed decisions about which factors to consider before venturing into a start-up.
-
-- To perform hypothesis test to either reject or accept the Null hypothesis 
+- Model accuracy: The model's accuracy should be above 70%
+- Retention Strategy Effectiveness: The implemented retention strategies should show a measurable impact on reducing customer churn rates. This can be assessed by comparing churn rates before and after implementing the strategies.
+- Cost Reduction: The model should contribute to reducing the costs associated with customer acquisition by identifying at-risk customers early on and allowing targeted retention efforts.
+- Customer Satisfaction: While focusing on retention, the model and strategies should also aim to maintain or improve customer satisfaction levels. High customer satisfaction leads to increased loyalty and potentially higher customer lifetime value.
+- Adaptability and Scalability: The developed model should be adaptable to changing business environments and scalable to accommodate larger datasets or additional features. This ensures its long-term viability and usefulness for the company.
+- Feedback and Iteration: Continuous feedback loops should be established to gather insights from the model's predictions and refine the retention strategies accordingly. This iterative process ensures ongoing improvement and optimization of the churn prediction system.
 
 ## Key Insights <a name="key-Insights"></a>
-The analysis of the Indian Startup Ecosystem using the 2018-2021 funding datasets has yielded valuable insights into the funding trends and dynamics within the ecosystem. Based on the EDA and visualizations conducted, the following key findings and conclusions have been drawn:
-1. _Sector Disparities_:
-   - Certain sectors, such as financial services,retail, IT & Technology, received a significantly higher amount of funding compared to others like agriculture or manufacturing.
-   - Startups in high-growth sectors tended to attract more funding, indicating investor interest in innovative and scalable ventures.
-1. _Regional Disparities_:
-   - Specific locations, such as metropolitan areas or tech hubs, attracted a disproportionate amount of funding compared to rural or less developed regions.
-   - The concentration of funding in certain regions highlighted the importance of geographic location in accessing capital and resources.
-1. _Startup Stage Influence_:
-   - Analysis revealed that startups in later stages, such as Series C or beyond, tended to secure larger funding amounts compared to early-stage ventures.
-   - The maturity and proven track record of older startups played a significant role in attracting investor confidence and larger investments.
-1. _Investor Preferences_:
-   - Investors showed a preference for sectors with high growth potential and proven market demand, aligning their funding decisions with industry trends and market dynamics.
-   - Understanding investor preferences and sector trends can help startups tailor their pitches and strategies to attract funding effectively.
-1. _Strategic Implications_:
-   - The findings suggest that startups in underfunded sectors or regions may need to focus on differentiation, innovation, and networking to attract investment.
-   - Startups at earlier stages should emphasize building credibility, market validation, and scalability to increase their attractiveness to potential investors.
+The distilled recommendations are as follows:
+1. Tailor Pricing Strategies: The analysis reveals a correlation between higher monthly charges and increased customer churn. To bolster retention, Vodafone could explore tailored pricing strategies that balance revenue generation with customer satisfaction and perceived value.
 
-
+2. Enhance Early Customer Experience: Elevated churn rates during the initial months emphasize the importance of prioritizing early customer experience. By focusing on seamless onboarding processes, service quality, and swift issue resolution, Vodafone can enhance satisfaction and foster loyalty during this critical phase.
+3. Promote Long-Term Contracts: Higher churn rates among customers on month-to-month contracts call for attention. Encouraging the adoption of longer-term contracts through incentives and benefits could cultivate commitment and diminish churn.
+4. Leverage Additional Services: Services like Online Security and Backup have a notable impact on churn rates. Strengthening these offerings to address customer needs can aid in retention by delivering value-added solutions.
+5. Monitor Fiber Optic Offering: Given its high charges and churn rate, meticulous attention to the Fiber Optic service is crucial. Continuously refining and supporting this service will ensure that premium costs align with customer expectations.
+6. Personalized Customer Engagement: Utilize insights from churn analysis to craft personalized engagement strategies. Tailored communication, targeted offers, and customized marketing campaigns based on factors such as tenure, contract type, and preferences can enhance loyalty and mitigate churn.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-![image](https://github.com/adubrightkwartengsnr/Indian_Startup_Ecosystem_Analysis_2018-2021)
+![image](Utils\Dashboard.jpeg)
 
 
 
@@ -143,7 +134,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/adubrightkwartengsnr/Indian_Startup_Ecosystem_Analysis_2018-2021
+  git clone https://github.com/adubrightkwartengsnr/LP2-Customer-Churn-Prediction
 ```
 
 Change into the cloned repository
@@ -188,28 +179,6 @@ Here, you need to recursively install the packages in the `requirements.txt` fil
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-While the analysis of the Indian Startup Ecosystem using the 2018-2021 funding datasets has provided valuable insights through data cleaning, EDA, visualizations, univariate analysis and dashboarding, there are several areas for potential future work and improvements to enhance the depth and scope of the analysis:
-1. _Machine Learning Integration_:
-   - Incorporating machine learning models could offer predictive capabilities, such as forecasting funding trends, identifying startup success factors, or building recommendation systems for investors.
-   - Machine learning algorithms could be applied to classify startups into different categories based on funding potential or success likelihood.
-1. _Advanced Data Analysis Techniques_:
-   - Exploring advanced statistical analysis methods, such as regression analysis, cluster analysis, or time series forecasting, could provide deeper insights into the factors influencing funding outcomes.
-   - Leveraging advanced data mining techniques to uncover hidden patterns, anomalies, or correlations within the datasets could reveal additional actionable insights.
-1. _Real-Time Data Integration_:
-   - Integrating real-time data sources and APIs could enable continuous monitoring of funding activities, market trends, and startup performance, allowing for dynamic and up-to-date analysis.
-   - Implementing automated data pipelines for data ingestion, cleaning, and analysis could streamline the process and ensure the analysis is always based on the latest information.
-1. _Interactive Dashboards_:
-   - Developing interactive dashboards and data visualization tools could enhance the accessibility and usability of the analysis results, enabling stakeholders to explore the data and insights in a user-friendly manner.
-   - Incorporating drill-down capabilities, filters, and interactive elements in the visualizations could empower users to conduct ad-hoc analysis and derive customized insights.
-1. _Collaborative Research Opportunities_:
-   - Collaborating with domain experts, industry professionals, or academic researchers could provide additional perspectives, domain knowledge, and validation of the analysis findings.
-   - Engaging in cross-disciplinary research projects or partnerships could lead to innovative insights and solutions for addressing challenges within the startup ecosystem.
-
-By considering these potential future work areas and improvements, the analysis of the Indian Startup Ecosystem can be further enhanced, leading to more comprehensive, actionable, and impactful insights based on the 2018-2021 funding datasets.
 
   
   
@@ -252,7 +221,7 @@ This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p> align="right">(<a href="https://medium.com/@adubrightkwarrteng11/exploring-the-indian-startup-ecosystem-a-data-driven-analysis-of-funding-trends-and-industry-c200428666c1">Link to Article</a>)</p>
+<p> align="right">(<a href="https://medium.com/@adubrightkwarrteng11/customer-churn-prediction-a-machine-learning-learning-approach-d75d3ef90391">Link to Article</a>)</p>
 
 
 
