@@ -1,4 +1,4 @@
-![Getting Started](Utils\Dashboard.jpeg)
+![Getting Started](Utils/Dashboard.jpeg)
 <a name="readme-top"></a>
 
 <div align="center">
@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Indian Startup Analysis <a name="about-project"></a>
+# Customer Churn Prediction <a name="about-project"></a>
 
 **# Churn Predictor: Forecasting Customer Churn with Machine Learning** The Every company wants to increase its profit or revenue margin and customer retention is one key area industry players focus their resources. In today's world of machine learning, most companies build classification models to perform churn analysis on their customers. 
 
